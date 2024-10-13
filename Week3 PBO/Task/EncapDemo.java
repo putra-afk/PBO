@@ -16,11 +16,9 @@ public class EncapDemo {
         return age;
     }
 
-    public void setAge(int newAge){
-        if (newAge > 30){
-            age = 30;
-        } else {
-            age = newAge;
-        }
+    public void setAge(int age) {
+        int validatedAge = Math.max(age, 18);
+        validatedAge = Math.min(validatedAge, 30);
+        this.age = validatedAge;
     }
 }

@@ -15,7 +15,11 @@ public class Motor {
 
     public void increaseEngine(){
         if (motorOn==true){
-            speed+=5;
+            if (this.speed == 100) {
+                System.out.println("Maximum speed of the motor is 100!");
+            } else {
+                this.speed += 5;
+            }
         }
         else{
             System.out.println("Motor cycle off");
