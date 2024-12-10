@@ -24,6 +24,7 @@ public class PermanentEmployee extends Employee implements Payable {
     @Override
     public String getEmployeeInfo() {
         String info = super.getEmployeeInfo()+"\n";
+        info += "Registered as Permanent Employee with salary "+salary+"\n";
         return info;
     }
 }
